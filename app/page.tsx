@@ -1,113 +1,107 @@
 import Image from "next/image";
+import { Menu } from "./data/menu";
+import { Footer, Heading1, WhyChooseUs } from "./components";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <>
+      <Head>
+        <title>Tuyển sinh - Trường Đại Học Hải Phòng</title>
+      </Head>
+      <header>
+        <div className="bg-white">
+          <div className="container mx-auto">
+            <div className="flex items-center gap-4">
+              <img src='https://tuyensinh.dhhp.edu.vn/Content/Frontend/img/logo.png' alt="LOGO" className="w-72 py-2" />
+              {
+                Menu.map((value, index) => (
+                  <div key={index} className="py-1">
+                    {value.label}
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div className="hero">
+          <img src="https://w.ladicdn.com/s1440x748/5c7362c6c417ab07e5196b05/748-d-20240130170033-8esaf.png" />
+        </div>
+        {
+          // WHY CHOOSE US
+        }
+        <div className="relative" style={{
+          backgroundImage: 'url(https://w.ladicdn.com/s1440x723/5c7362c6c417ab07e5196b05/723-d-20240130172301-y4irw.png)'
+        }}>
+          <div className="container mx-auto text-center">
+            <Heading1
+              title="TẠI SAO NÊN CHỌN ĐẠI HỌC Hải phòng?"
+              subTitle="Trường Đại học Hải Phòng tự hào mang đến cho sinh viên một môi trường học tập hiện đại, thân thiện và chuyên nghiệp."
             />
-          </a>
+            <WhyChooseUs />
+            <div className="flex gap-4 md:gap-10 justify-center py-4 md:py-8 rounded md:rounded-lg bg-cover" style={{
+              backgroundImage: 'url(	https://w.ladicdn.com/s1550x650/5c7362c6c417ab07e5196b05/20-20240130173313-k02ok.png)'
+            }}>
+              <div className="h-48 w-48 bg-white rounded-full flex items-center justify-center flex-col p-4 text-center">
+                <div className="text-blue-500 text-lg md:text-2xl font-bold">37.500+</div>
+                <div className="text-sm">Sinh viên đã và đang theo học</div>
+              </div>
+              <div className="h-48 w-48 bg-white rounded-full flex items-center justify-center flex-col p-4 text-center">
+                <div className="text-blue-500 text-lg md:text-2xl font-bold">36</div>
+                <div className="text-sm">Ngành đào tạo hệ đại học chính quy</div>
+              </div>
+              <div className="h-48 w-48 bg-white rounded-full flex items-center justify-center flex-col p-4 text-center">
+                <div className="text-blue-500 text-lg md:text-2xl font-bold">100%</div>
+                <div className="text-sm">Sinh viên được kết nối việc làm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style={{
+          backgroundImage: 'url(https://w.ladicdn.com/s1440x2911/5c7362c6c417ab07e5196b05/2058-d-20240130173842-_uk1-.png)'
+        }}>
+          <div className="text-center">
+            <Heading1
+              title="CÁC NGÀNH ĐÀO TẠO"
+              subTitle="Mã trường Đại học Hải Phòng"
+            />
+            <div className="container mx-auto">
+              <div className="flex gap-4 mb-4">
+                <button type="button" className="px-4 py-2 rounded bg-blue-500 text-white flex-1 md:text-lg text-center">Các ngành đào tạo</button>
+                <button type="button" className="px-4 py-2 rounded bg-blue-500 text-white flex-1 md:text-lg text-center">Điểm chuẩn Đại học Đại Nam năm 2024</button>
+              </div>
+              <img src="https://w.ladicdn.com/s1450x2950/5ab4a1836a6703d4257aa7a8/1200-146-20240614090026-r4gbf.jpg" alt="IMG" className="w-full" />
+            </div>
+          </div>
+        </div>
+        <div className="flex"></div>
+      </main>
+      <div style={{
+        backgroundImage: 'url(https://w.ladicdn.com/s1440x887/5c7362c6c417ab07e5196b05/887-d-20240130184218-oo0be.png)'
+      }} className="md:min-h-[885px] bg-cover w-full no-repeat bg-right flex flex-col justify-center">
+        <Heading1 title="NHẬN XÉT CỦA CÁC DOANH NGHIỆP VỀ CHẤT LƯỢNG ĐÀO TẠO" />
+        <div className="container mx-auto pb-4 md:pb-10 flex justify-center">
+        <div className="shadow rounded-lg bg-white flex p-4">
+          <div className="h-80 w-64 bg-slate-100 rounded-lg">
+            
+          </div>
+          <div className="md:w-[700px]">
+
+          </div>
+        </div>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div style={{
+        backgroundImage: 'url(https://w.ladicdn.com/s1440x725/5c7362c6c417ab07e5196b05/725-d-20240130185746-2z-p7.png)'
+      }}>
+        <div className="container mx-auto flex py-4 md:py-8 justify-center">
+          <img src="https://w.ladicdn.com/s750x950/5c7362c6c417ab07e5196b05/42-20240130185605-zuz4j.png" alt="IMG" className="md:w-96" />
+          <div className="bg-white w-96 rounded-lg"></div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <Footer />
+    </>
   );
 }
