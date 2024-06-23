@@ -9,9 +9,6 @@ export const Menu = [
         label: 'Phương thức xét tuyển'
     },
     {
-        label: 'Quy trình xét tuyển'
-    },
-    {
         label: 'Cơ sở vật chất'
     },
     {
