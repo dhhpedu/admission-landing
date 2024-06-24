@@ -1,17 +1,22 @@
 export const Menu = [
     {
-        label: 'Tại sao chọn chúng tôi'
+        label: 'Tại sao chọn chúng tôi',
+        url: '#why-choose-us'
     },
     {
-        label: 'Các ngành đào tạo'
+        label: 'Các ngành đào tạo',
+        url: '#branch'
     },
     {
-        label: 'Phương thức xét tuyển'
+        label: 'Phương thức xét tuyển',
+        url: '#'
     },
     {
-        label: 'Cơ sở vật chất'
+        label: 'Cơ sở vật chất',
+        url: '#infrastructure'
     },
     {
-        label: 'Hoạt động phong trào'
+        label: 'Hoạt động phong trào',
+        url: '#'
     }
 ]

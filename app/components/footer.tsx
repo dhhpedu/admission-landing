@@ -1,7 +1,17 @@
+"use client"
 import { faEnvelopeOpenText, faLocationDot, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// @ts-ignore
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Footer: React.FC = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <footer className="bg-blue-900 p-4 md:p-10 2xl:p-20 text-white">
             <div className="container mx-auto">
