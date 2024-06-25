@@ -17,14 +17,14 @@ const EventComponent: React.FC = () => {
 
     return (
 
-        <div className="md:flex">
+        <div className="md:flex" id="event">
             <div className="md:w-1/2">
                 <img src={photo} alt="IMG" className="w-full h-full object-cover" />
             </div>
             <div className="md:w-1/2">
-                <div className="bg-orange-500 h-full text-white p-4 md:p-10 2xl:p-20">
-                    <div className="text-3xl font-bold mb-1">HOẠT ĐỘNG PHONG TRÀO</div>
-                    <div className="text-3xl font-bold mb-2">PHONG PHÚ</div>
+                <div className="bg-red-600 h-full text-white p-4 md:p-10 2xl:p-20">
+                    <div className="text-2xl md:text-3xl font-bold mb-1">HOẠT ĐỘNG PHONG TRÀO</div>
+                    <div className="text-2xl md:text-3xl font-bold mb-2">PHONG PHÚ</div>
                     <div className="mb-2">
                         Tham gia hoạt động phong trào giúp sinh viên trau dồi kinh nghiệm xã hội, kỹ năng làm việc nhóm và các kỹ năng mềm khác.
                     </div>
@@ -34,7 +34,7 @@ const EventComponent: React.FC = () => {
                     <div className="grid grid-cols-3 gap-4 mb-4">
                         {
                             photos.map((photo) => (
-                                <div className="w-full h-40 bg-slate-100" key={photo.id}>
+                                <div className="w-full md:h-40 bg-slate-100" key={photo.id}>
                                     <img src={photo.url} alt="IMG" />
                                 </div>
                             ))

@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         <footer className="bg-blue-900 p-4 md:p-10 2xl:p-20 text-white">
             <div className="container mx-auto">
                 <div className="md:flex">
-                    <div className="md:w-2/3">
+                    <div className="md:w-2/3 mb-4">
                         <div className="flex flex-col justify-center">
                             <div className="mb-4 flex gap-4">
                                 <img src="https://dhhp.edu.vn/favicon.ico" alt="LOGO" className="w-20" />
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                                     <div className="text-4xl font-semibold">HẢI PHÒNG</div>
                                 </div>
                             </div>
-                            <ul className="text-lg font-medium mb-4">
+                            <ul className="md:text-lg font-medium mb-4">
                                 <li className="mb-1 flex gap-2 items-center">
                                     <FontAwesomeIcon icon={faLocationDot} className='w-5 h-5' />Địa chỉ: Số 171 Phan Đăng Lưu, Kiến An, Hải Phòng
                                 </li>
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                                     <FontAwesomeIcon icon={faEnvelopeOpenText} className='w-5 h-5' />Email: tuyensinh@dhhp.edu.vn
                                 </li>
                             </ul>
-                            <div className='flex gap-4'>
+                            <div className='flex gap-4 justify-center md:justify-start'>
                                 <img src='https://w.ladicdn.com/ladiui/icons/social/facebook.svg' className='w-12' />
                                 <img src='https://w.ladicdn.com/ladiui/icons/social/tiktok.svg' className='w-12' />
                                 <img src='https://w.ladicdn.com/ladiui/icons/social/youtube.svg' className='w-12' />

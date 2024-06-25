@@ -9,7 +9,7 @@ export const Menu = [
     },
     {
         label: 'Phương thức xét tuyển',
-        url: '#'
+        url: '#method'
     },
     {
         label: 'Cơ sở vật chất',
@@ -17,6 +17,6 @@ export const Menu = [
     },
     {
         label: 'Hoạt động phong trào',
-        url: '#'
+        url: '#event'
     }
 ]

@@ -10,10 +10,10 @@ import { useRef } from 'react';
 const WhyChooseUs: React.FC = () => {
   const swiperRef = useRef<SwiperRef>();
   return (
-    <div className='mb-4 md:mb-10' data-aos="fade-up" data-aos-duration="1000">
+    <div className='mb-4 md:mb-10 px-4 md:px-0' data-aos="fade-up" data-aos-duration="1000">
 
       <Swiper
-        slidesPerView={4}
+        slidesPerView={1}
         effect="coverflow"
         autoplay
         loop
@@ -31,6 +31,11 @@ const WhyChooseUs: React.FC = () => {
         }}
         grabCursor
         navigation
+        breakpoints={{
+          720: {
+            slidesPerView: 4
+          }
+        }}
       >
         {
           WhyChooseUsData.map((x, i) => (
@@ -39,7 +44,7 @@ const WhyChooseUs: React.FC = () => {
                 <img src={x.image} alt="IMG" className='object-cover h-[500px] rounded-xl' />
                 <div style={{
                   backgroundImage: 'url(https://w.ladicdn.com/s650x450/5c7362c6c417ab07e5196b05/12-20240130170856-r3aua.png)'
-                }} className='absolute bottom-0 left-0 right-0 p-3 text-white rounded-b-xl h-32 md:text-lg'>
+                }} className='absolute bottom-0 left-0 right-0 p-3 text-white rounded-b-xl h-32 text-lg'>
                   {x.label}
                 </div>
               </div>
