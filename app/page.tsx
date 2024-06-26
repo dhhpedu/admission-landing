@@ -2,7 +2,8 @@ import { Menu } from "./data/menu";
 import { Footer, Heading1, WhyChooseUs, Statistics, Testimonial, EventComponent, Infrastructure } from "./components";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight, faBars, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="bg-white">
           <div className="container mx-auto">
             <div className="flex items-center gap-4 justify-between">
-              <img src='https://tuyensinh.dhhp.edu.vn/Content/Frontend/img/logo.png' alt="LOGO" className="2xl:w-72 w-64 py-2" />
+              <Image src='https://dhhp.edu.vn/admissions/logo.png' alt="LOGO" className="2xl:w-72 w-64 py-2" width={1200} height={222} />
               <div className="flex-1 md:flex hidden items-center gap-4 justify-center">
                 {
                   Menu.map((value, index) => (
@@ -58,7 +59,7 @@ export default function Home() {
         </div>
         <div style={{
           backgroundImage: 'url(https://dhhp.edu.vn/admissions/bg-line3.png)'
-        }}>
+        }} className="bg-cover">
           <div className="text-center" id="branch">
             <Heading1
               center
@@ -66,32 +67,34 @@ export default function Home() {
               subTitle="Mã trường Đại học Hải Phòng"
             />
             <div className="container mx-auto 2xl:px-40">
-              <div className="flex gap-4 mb-4 font-bold">
+              <div className="flex gap-4 mb-4 font-bold px-2 md:px-0">
                 <button type="button" className="px-4 py-3 rounded bg-blue-900 text-white flex-1 md:text-lg text-center">Các ngành đào tạo</button>
                 <button type="button" className="px-4 py-3 rounded bg-gray-500 text-white flex-1 md:text-lg text-center">Điểm chuẩn Đại học Hải Phòng năm 2024</button>
               </div>
-              <img src="https://dhhp.edu.vn/admissions/cac-nganh-dao-tao-min.png" alt="IMG" className="w-full rounded-xl shadow-lg pb-6" />
+              <div className="pb-8 px-2 md:px-0">
+                <img src="https://dhhp.edu.vn/admissions/cac-nganh-dao-tao.jpg" alt="IMG" className="w-full rounded-xl shadow-lg" />
+              </div>
             </div>
           </div>
         </div>
         <div style={{
           backgroundImage: 'url(https://dhhp.edu.vn/admissions/bg-line2.png)'
-        }}>
-          <div className="container py-4 mx-auto">
+        }} className="bg-cover py-4 md:py-40">
+          <div className="container py-10 mx-auto">
             <div className="md:flex md:py-10 items-center">
-              <div className="md:w-1/2 flex justify-end relative">
-                <img src="https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/25-20240130175108-4r4cl.png" alt="IMG" className="absolute left-40 w-32 animate-bounce" style={{
+              <div className="md:w-2/5 flex justify-center relative">
+                <img src="https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/25-20240130175108-4r4cl.png" alt="IMG" className="absolute left-10 w-14 md:w-32 animate-bounce" style={{
                   animationDuration: '2s'
                 }} />
-                <img src="https://w.ladicdn.com/s450x400/5c7362c6c417ab07e5196b05/26-20240130175108-aehup.png" alt="IMG" className="absolute right-0 w-32 animate-bounce" style={{
+                <img src="https://w.ladicdn.com/s450x400/5c7362c6c417ab07e5196b05/26-20240130175108-aehup.png" alt="IMG" className="absolute right-0 w-14 md:w-32 animate-bounce" style={{
                   animationDuration: '2s'
                 }} />
-                <img src="https://w.ladicdn.com/s400x450/5c7362c6c417ab07e5196b05/27-20240130175108-n3e1y.png" alt="IMG" className="absolute left-60 top-60 w-20 animate-spin" style={{
+                <img src="https://w.ladicdn.com/s400x450/5c7362c6c417ab07e5196b05/27-20240130175108-n3e1y.png" alt="IMG" className="absolute right-10 md:right-20 top-60 w-14 md:w-20 animate-spin" style={{
                   animationDuration: '2s'
                 }} />
                 <img src="https://dhhp.edu.vn/admissions/girl1.png" alt="IMG" className="md:w-[400px] w-64 mr-20" data-aos="fade-right" data-aos-duration="1000" />
               </div>
-              <div className="md:w-1/2">
+              <div className="md:w-3/5 md:text-lg">
                 <div className="relative mb-2">
                   <div className="flexitems-center">
                     <div style={{
@@ -186,13 +189,10 @@ export default function Home() {
         <div style={{
           backgroundImage: 'url(https://w.ladicdn.com/s1440x962/5c7362c6c417ab07e5196b05/980-d-20240130180951-tb20q.png)'
         }} className="py-4 md:py-20 bg-cover" id="method">
-          <div className="container mx-auto">
-            <div className=" rounded-xl mx-auto border-2 border-white bg-cover max-w-[1000px]">
-              {/* <div className="text-center md:text-3xl text-white font-bold">
-                <div className="mb-2">QUY TRÌNH XÉT TUYỂN</div>
-                <div className="mb-2">TẠI ĐẠI HỌC HẢI PHÒNG</div>
-              </div> */}
-              <img src="https://dhhp.edu.vn/admissions/to-hop-xet-tuyen.png" className="w-full rounded-lg shadow-lg" />
+          <div className="container mx-auto py-10 px-2 md:px-0">
+            <div className="bg-white rounded-xl mx-auto border-2 border-white bg-cover max-w-[1000px]">
+              <div className="text-lg md:text-3xl text-blue-800 font-bold text-center py-2 md:py-4" data-aos="fade-up" data-aos-duration="1000">Chứng nhận</div>
+              <img src="https://dhhp.edu.vn/admissions/certs/kiem-dinh-chat-luong.jpg" className="w-full rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" />
             </div>
           </div>
         </div>
@@ -200,10 +200,10 @@ export default function Home() {
         <EventComponent />
         <div style={{
           backgroundImage: 'url(https://w.ladicdn.com/s1440x1371/5c7362c6c417ab07e5196b05/1289-20240131074326-mllq3.png)'
-        }} className="py-4 md:py-10 2xl:py-20 px-2 md:px-0">
+        }} className="py-4 md:py-10 2xl:py-20 px-2 md:px-0 bg-cover">
           <Heading1 title="Phương thức tuyển sinh" center />
-          <div className="flex justify-center">
-            <img src="https://dhhp.edu.vn/admissions/phuong-thuc-tuyen-sinh.png" alt="IMG" className="max-w-[1000px] w-full" />
+          <div className="flex justify-center" data-aos="fade-up" data-aos-duration="1000">
+            <img src="https://dhhp.edu.vn/admissions/phuong-thuc-tuyen-sinh.png" alt="IMG" className="max-w-[1000px] w-full rounded-lg bg-shadow-lg" />
           </div>
         </div>
       </main>

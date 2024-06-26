@@ -23,8 +23,8 @@ const EventComponent: React.FC = () => {
             </div>
             <div className="md:w-1/2">
                 <div className="bg-red-600 h-full text-white p-4 md:p-10 2xl:p-20">
-                    <div className="text-2xl md:text-3xl font-bold mb-1">HOẠT ĐỘNG PHONG TRÀO</div>
-                    <div className="text-2xl md:text-3xl font-bold mb-2">PHONG PHÚ</div>
+                    <div className="text-2xl md:text-3xl font-bold mb-1" data-aos="fade-left" data-aos-duration="1000">HOẠT ĐỘNG PHONG TRÀO</div>
+                    <div className="text-2xl md:text-3xl font-bold mb-2" data-aos="fade-left" data-aos-duration="1000">PHONG PHÚ</div>
                     <div className="mb-2">
                         Tham gia hoạt động phong trào giúp sinh viên trau dồi kinh nghiệm xã hội, kỹ năng làm việc nhóm và các kỹ năng mềm khác.
                     </div>
