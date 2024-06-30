@@ -29,10 +29,10 @@ const Infrastructure: React.FC = () => {
                         subTitle="Quần thể nhà trường rộng gần 30ha tọa lạc tại Kiến An - Hải Phòng"
                     />
                     <div className="flex gap-2 md:gap-4">
-                        <button type="button" className="h-12 w-12 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transaction duration-500">
+                        <button type="button" className="h-10 md:h-12 w-10 md:w-12 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transaction duration-500">
                             <FontAwesomeIcon icon={faArrowLeft} />
                         </button>
-                        <button type="button" className="h-12 w-12 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transaction duration-500">
+                        <button type="button" className="h-10 md:h-12  w-10 md:w-12 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transaction duration-500">
                             <FontAwesomeIcon icon={faArrowRight} />
                         </button>
                     </div>

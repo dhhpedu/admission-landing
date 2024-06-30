@@ -50,7 +50,13 @@ export default function Home() {
             <Heading1
               center
               title="TẠI SAO NÊN CHỌN ĐẠI HỌC Hải phòng?"
-              subTitle="Trường Đại học Hải Phòng tự hào mang đến cho sinh viên một môi trường học tập hiện đại, thân thiện và chuyên nghiệp."
+              subTitle={
+                <div className="text-sm md:text-base">
+                  <div>Trường Đại học Hải Phòng tự hào mang đến cho sinh viên một môi trường học tập hiện đại, thân thiện và chuyên nghiệp, đào tạo đa ngành, đa lĩnh vực</div>
+                  <div>Ký Túc Xá khang trang mới được bảo dưỡng, sửa chữa</div>
+                  <div>Khuôn viên rộng lớn, có khu phức hợp thể thao hiện đại.</div>
+                </div>
+              }
             />
             <WhyChooseUs />
             <Statistics />
