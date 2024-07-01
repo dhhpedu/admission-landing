@@ -29,7 +29,7 @@ const EventComponent: React.FC = () => {
                         Tham gia hoạt động phong trào giúp sinh viên trau dồi kinh nghiệm xã hội, kỹ năng làm việc nhóm và các kỹ năng mềm khác.
                     </div>
                     <div className="mb-4">
-                        Và còn muôn vàn các hoạt động sôi nổi, bắt nhịp xu hướng để các tân sinh viên thỏa sức rèn luyện, vui chơi, giải trí; phát triển toàn diện Đức - Trí - Thể - Mỹ, khai phá sức sáng tạo. Chắc chắc quãng đại học của các bạn sẽ không bao giờ nhàm chán và thiếu đi những kỷ niệm đẹp tại mái trường Đại học Đại Nam.
+                        Và còn muôn vàn các hoạt động sôi nổi, bắt nhịp xu hướng để các tân sinh viên thỏa sức rèn luyện, vui chơi, giải trí; phát triển toàn diện Đức - Trí - Thể - Mỹ, khai phá sức sáng tạo. Chắc chắc quãng đại học của các bạn sẽ không bao giờ nhàm chán và thiếu đi những kỷ niệm đẹp tại mái trường Đại học Hải Phòng.
                     </div>
                     <div className="grid grid-cols-3 gap-4 mb-4">
                         {
