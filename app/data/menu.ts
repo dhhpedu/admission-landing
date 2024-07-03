@@ -1,7 +1,7 @@
 export const Menu = [
     {
         label: 'Thông tin tuyển sinh',
-        url: 'https://thongtintuyensinh.dhhp.edu.vn'
+        url: 'https://admission.dhhp.edu.vn'
     },
     {
         label: 'Các ngành đào tạo',

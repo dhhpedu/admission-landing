@@ -1,17 +1,19 @@
 "use client"
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 
 const EventComponent: React.FC = () => {
 
     const [photos, setPhotos] = useState<any[]>([]);
-    const [photo, setPhoto] = useState<string>('');
+    const swiperRef = useRef<SwiperRef>(null);
 
     useEffect(() => {
         fetch(`https://dhhp.edu.vn/open-api/photos?apikey=lJQnpvudu92zeOZ&PostId=38932`).then(value => value.json().then(data => {
             setPhotos(data);
-            setPhoto(data[0].url);
         }))
     }, []);
 
@@ -19,7 +21,20 @@ const EventComponent: React.FC = () => {
 
         <div className="md:flex" id="event">
             <div className="md:w-1/2">
-                <img src={photo} alt="IMG" className="w-full h-full object-cover" />
+                <Swiper className="h-full"
+                    ref={swiperRef}
+                    autoplay
+                    modules={[Autoplay]}
+                    loop
+                >
+                    {
+                        photos.map((photo, index) => (
+                            <SwiperSlide key={photo.id}>
+                                <Image src={photo.url} width={950} height={660} alt="IMG" className="h-full object-cover w-full" />
+                            </SwiperSlide>
+                        ))
+                    }
+                </Swiper>
             </div>
             <div className="md:w-1/2">
                 <div className="bg-red-600 h-full text-white p-4 md:p-10 2xl:p-20">
@@ -42,10 +57,14 @@ const EventComponent: React.FC = () => {
 
                     </div>
                     <div className="flex gap-4 text-white pt-4">
-                        <button type="button" className="border-2 rounded-full h-14 w-14 hover:bg-white hover:text-orange-500">
+                        <button type="button" className="border-2 rounded-full h-14 w-14 hover:bg-white hover:text-orange-500" onClick={() => {
+                            swiperRef.current?.swiper.slidePrev();
+                        }}>
                             <FontAwesomeIcon icon={faArrowLeft} />
                         </button>
-                        <button type="button" className="border-2 rounded-full h-14 w-14 hover:bg-white hover:text-orange-500">
+                        <button type="button" className="border-2 rounded-full h-14 w-14 hover:bg-white hover:text-orange-500" onClick={() => {
+                            swiperRef.current?.swiper.slideNext();
+                        }}>
                             <FontAwesomeIcon icon={faArrowRight} />
                         </button>
                     </div>

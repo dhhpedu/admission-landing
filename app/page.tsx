@@ -3,6 +3,8 @@ import { Footer, Heading1, WhyChooseUs, Statistics, Testimonial, EventComponent,
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -15,7 +17,9 @@ export default function Home() {
         <div className="bg-white">
           <div className="container mx-auto">
             <div className="flex items-center gap-4 justify-between">
-              <img src='https://dhhp.edu.vn/admissions/logo.png' alt="LOGO" className="2xl:w-72 w-64 py-2" />
+              <Link href="/">
+                <Image src='https://dhhp.edu.vn/admissions/logo.png' alt="LOGO" className="2xl:w-72 w-64 py-2" width={300} height={70} />
+              </Link>
               <div className="flex-1 md:flex hidden items-center gap-4 justify-center">
                 {
                   Menu.map((value, index) => (
@@ -72,11 +76,13 @@ export default function Home() {
               subTitle={<>Mã trường <b>THP</b></>}
             />
             <div className="container mx-auto 2xl:px-40">
-              <div className="flex gap-4 mb-4 font-bold px-2 md:px-0">
-                <button type="button" className="px-4 py-3 rounded bg-blue-900 text-white flex-1 md:text-lg text-center">Các ngành đào tạo</button>
+              <div className="flex flex-col md:flex-row gap-2 md:gap-4 mb-4 font-bold px-2 md:px-0">
+                <a href="https://admission.dhhp.edu.vn/catalog" className="px-4 py-3 rounded bg-blue-900 text-white flex-1 md:text-lg text-center">
+                  Các ngành đào tạo
+                </a>
                 <button type="button" className="px-4 py-3 rounded bg-gray-500 text-white flex-1 md:text-lg text-center">Điểm chuẩn Đại học Hải Phòng năm 2024</button>
               </div>
-              <div className="pb-8 px-2 md:px-0">
+              <div className="pb-4 md:pb-10 px-2 md:px-0">
                 <img src="https://dhhp.edu.vn/admissions/cac-nganh-dao-tao.jpg" alt="IMG" className="w-full rounded-xl shadow-lg" />
               </div>
             </div>
@@ -84,7 +90,7 @@ export default function Home() {
         </div>
         <div style={{
           backgroundImage: 'url(https://dhhp.edu.vn/admissions/bg-line2.png)'
-        }} className="bg-cover py-4 md:py-6">
+        }} className="bg-cover py-4 md:py-8 2xl:py-20">
           <div className="container py-4 mx-auto">
             <div className="md:flex md:py-10 items-center">
               <div className="md:w-2/5 flex justify-center relative">
@@ -271,9 +277,58 @@ export default function Home() {
           backgroundImage: 'url(https://w.ladicdn.com/s1440x962/5c7362c6c417ab07e5196b05/980-d-20240130180951-tb20q.png)'
         }} className="py-4 md:py-20 bg-cover" id="method">
           <div className="container mx-auto py-10 px-2 md:px-0">
+            <Heading1 center title="Chế độ chính sách với sinh viên" white />
             <div className="bg-white rounded-xl mx-auto border-2 border-white bg-cover max-w-[1000px]">
-              <div className="text-lg md:text-3xl text-blue-800 font-bold text-center py-2 md:py-4" data-aos="fade-up" data-aos-duration="1000">Chứng nhận</div>
-              <img src="https://dhhp.edu.vn/admissions/certs/kiem-dinh-chat-luong.jpg" className="w-full rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" />
+              <div className="bg-red-500 max-w-[1000px] mx-auto rounded-xl" data-aos="fade-up" data-aos-duration="1000" >
+                <div className="p-4 md:p-10">
+                  <div className="text-white">
+                    <div className="mb-2">
+                      Xem người học là trung tâm của mọi hoạt động; Bên cạnh chú trọng đầu tư về chất lượng đào tạo cùng dịch vụ trải nghiệm sinh viên sống động, ĐHHP luôn tạo điều kiện tốt nhất cho người học, trong đó có việc cung cấp đầy đủ, kịp thời cho sinh viên thông tin về chính sách học bổng.
+                    </div>
+                    <div className="mb-2">
+                      Chính sách học bổng nhằm khuyến khích sinh viên đạt thành tích cao trong việc học cũng như tạo điều kiện cho sinh viên có hoàn cảnh khó khăn tiếp tục theo đuổi ước mơ của mình từ giảng đường đại học.
+                    </div>
+                    <div className="mb-2">Hàng năm, Trường ĐHHP dành hàng chục tỉ đồng cho những loại hình học bổng sau:</div>
+                  </div>
+                  <div className="text-white text-xl font-bold mb-2 uppercase">1. Học bổng Khuyến khích học tập</div>
+                  <div className="p-4 rounded bg-white mb-4">
+                    Tỉ lệ sinh viên đạt học bổng chiếm tỷ lệ từ 5% đến 8% trên tổng số hơn 10.000 sinh viên chính quy toàn trường; trị giá học bổng từ 100% đến 120% mức học phí từng ngành đạo tạo, chương trình đào tạo.
+                  </div>
+
+                  <div className="text-white text-xl font-bold mb-2 uppercase">2. Học bổng tài trợ từ các tổ chức, doanh nghiệp theo chương trình &quot;Ươm mầm tài năng Đại học Hải Phòng&quot;.</div>
+                  <div className="p-4 bg-white mb-4">
+                    Nhà trường liên kết chặt chẽ với các doanh nghiệp, tổ chức trong và ngoài nước hàng năm dành tặng cho sinh viên nhà trường hàng trăm triệu đồng mỗi năm như học bổng của Ngân hàng TMCP Vietinbank, Vietcombank; Tổ chức Tầm nhìn thế giới World Vision; Tập đoàn LG; Quỹ Giáo dục Quốc tế Hàn Quốc Woonjung; Công ty TNHH Pegatron,… dành tặng cho sinh viên trúng tuyển đạt thủ khoa đầu ngành, sinh viên đạt thành tích cao tại các cuộc thi cấp quốc gia và quốc tế trúng tuyển vào trường, những sinh viên đạt thành tích cao trong học tập và rèn luyện, sinh viên có hoàn cảnh khó khăn vươn lên trong học tập.
+                  </div>
+                  <div className="text-white text-xl font-bold mb-2 uppercase">3. Học bổng tài năng:</div>
+                  <div className="bg-white p-4 mb-4">
+                    Đặc biệt, trong năm học 2024 - 2025, Nhà trường liên kết với các doanh nghiệp trên địa bàn thành phố dành các suất học bổng có giá trị cao cho các sinh viên có thành tích học tập giỏi, xuất sắc vào học chương trình chất lượng cao tại trường. Bên cạnh đó, sinh viên chương trình CLC được tạo điều kiện về thực tập thực hành tại các Doanh nghiệp, tổ chức tài trợ và có chính sách ưu tiên trong tuyển dụng.
+
+                  </div>
+                  <div className="text-white text-xl font-bold mb-2 uppercase">4. Các chính sách hỗ trợ khác</div>
+
+                  <div className="p-4 bg-white rounded">
+                    <div className="font-semibold mb-2 text-lg">Nhà trường đảm bảo thực hiện đầy đủ các chính sách cho sinh viên theo các quy định của nhà nước, cụ thể:</div>
+                    <ul className="list-disc pl-10">
+                      <li>
+                        Chính sách hỗ trợ học phí và chi phí sinh hoạt cho sinh viên sư phạm theo Nghị định 116/2020/NĐ-CP. Mỗi sinh viên được hỗ trợ học phí bằng mức thu học phí của cơ sở đào tạo và được hỗ trợ chi phí học tập 36,3 tr đồng/năm học.
+                      </li>
+                      <li>
+                        Chính sách miễn, giảm học phí cho sinh viên đối tượng chính sách theo Nghị định 81/2021/NĐ-CP;
+                      </li>
+                      <li>
+                        Chính sách hỗ trợ học tập đối với sinh viên dân tộc thiểu số rất ít người theo Nghị định 57/2017/NĐ-CP;
+                      </li>
+                      <li>
+                        Chính sách hỗ trợ chi phí học tập đối với sinh viên là người dân tộc thiểu số thuộc hộ nghèo, cận nghèo theo Quyết định số 66/2013/QĐ-TTg.
+                      </li>
+                      <li>
+                        Chính sách hỗ trợ cho sinh viên vay vốn tín dụng tại Ngân hàng chính sách xã hội địa phương theo Quyết định số 157/2007/QĐ-TTg.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="bg-blue-900 rounded-b-xl p-4"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -290,57 +345,7 @@ export default function Home() {
       </main>
       <div className="bg-stone-100">
         <div className="container mx-auto py-4 md:py-10">
-          <Heading1 center title="Chế độ chính sách với sinh viên" />
-          <div className="bg-red-500 max-w-[1000px] mx-auto rounded-xl" data-aos="fade-up" data-aos-duration="1000" >
-            <div className="p-4 md:p-10">
-              <div className="text-white">
-                <div className="mb-2">
-                  Xem người học là trung tâm của mọi hoạt động; Bên cạnh chú trọng đầu tư về chất lượng đào tạo cùng dịch vụ trải nghiệm sinh viên sống động, ĐHHP luôn tạo điều kiện tốt nhất cho người học, trong đó có việc cung cấp đầy đủ, kịp thời cho sinh viên thông tin về chính sách học bổng
-                </div>
-                <div className="mb-2">
-                  Chính sách học bổng nhằm khuyến khích sinh viên đạt thành tích cao trong việc học cũng như tạo điều kiện cho sinh viên có hoàn cảnh khó khăn tiếp tục theo đuổi ước mơ của mình từ giảng đường đại học.
-                </div>
-              </div>
-              <div className="text-white text-xl font-bold mb-2 uppercase">1. Học bổng Khuyến khích học tập</div>
-              <div className="p-4 rounded bg-white mb-4">
-                Nhà trường dành ra gần 10 tỷ đồng mỗi năm cho HB khuyến khích học tập, hàng năm tỉ lệ sinh viên đạt học bổng chiếm tỷ lệ từ 5% đến 8% trên tổng số hơn 10.000 sinh viên chính quy toàn trường; trị giá học bổng từ 100% đến 120% mức học phí từng ngành đạo tạo, chương trình đào tạo.
 
-              </div>
-
-              <div className="text-white text-xl font-bold mb-2 uppercase">2. Học bổng tài trợ từ các tổ chức, doanh nghiệp theo chương trình &quot;Ươm mầm tài năng Đại học Hải Phòng&quot;.</div>
-              <div className="p-4 bg-white mb-4">
-                Nhà trường liên kết chặt chẽ với các doanh nghiệp, tổ chức trong và ngoài nước hàng năm dành tặng cho sinh viên nhà trường hàng trăm triệu đồng mỗi năm như học bổng của Ngân hàng TMCP Vietinbank, Vietcombank; Tổ chức Tầm nhìn thế giới World Vision; Tập đoàn LG; Quỹ Giáo dục Quốc tế Hàn Quốc Woonjung; Công ty TNHH Pegatron,… dành tặng cho sinh viên trúng tuyển đạt thủ khoa đầu ngành, sinh viên đạt thành tích cao tại các cuộc thi cấp quốc gia và quốc tế trúng tuyển vào trường, những sinh viên đạt thành tích cao trong học tập và rèn luyện, sinh viên có hoàn cảnh khó khăn vươn lên trong học tập.
-              </div>
-              <div className="text-white text-xl font-bold mb-2 uppercase">3. Học bổng tài năng:</div>
-              <div className="bg-white p-4 mb-4">
-                Đặc biệt, trong năm học 2024 - 2025, Nhà trường liên kết với các doanh nghiệp trên địa bàn thành phố dành các suất học bổng có giá trị cao cho các sinh viên có thành tích học tập giỏi, xuất sắc vào học chương trình chất lượng cao tại trường. Bên cạnh đó, sinh viên chương trình CLC được tạo điều kiện về thực tập thực hành tại các Doanh nghiệp, tổ chức tài trợ và có chính sách ưu tiên trong tuyển dụng.
-
-              </div>
-              <div className="text-white text-xl font-bold mb-2 uppercase">4. Các chính sách hỗ trợ khác</div>
-
-              <div className="p-4 bg-white rounded">
-                <div className="font-semibold mb-2 text-lg">Nhà trường đảm bảo thực hiện đầy đủ các chính sách cho sinh viên theo các quy định của nhà nước, cụ thể:</div>
-                <ul className="list-disc pl-10">
-                  <li>
-                    Chính sách hỗ trợ học phí và chi phí sinh hoạt cho sinh viên sư phạm theo Nghị định 116/2020/NĐ-CP. Mỗi sinh viên được hỗ trợ học phí bằng mức thu học phí của cơ sở đào tạo và được hỗ trợ chi phí học tập 36,3 tr đồng/năm học.
-                  </li>
-                  <li>
-                    Chính sách miễn, giảm học phí cho sinh viên đối tượng chính sách theo Nghị định 81/2021/NĐ-CP;
-                  </li>
-                  <li>
-                    Chính sách hỗ trợ học tập đối với sinh viên dân tộc thiểu số rất ít người theo Nghị định 57/2017/NĐ-CP;
-                  </li>
-                  <li>
-                    Chính sách hỗ trợ chi phí học tập đối với sinh viên là người dân tộc thiểu số thuộc hộ nghèo, cận nghèo theo Quyết định số 66/2013/QĐ-TTg.
-                  </li>
-                  <li>
-                    Chính sách hỗ trợ cho sinh viên vay vốn tín dụng tại Ngân hàng chính sách xã hội địa phương theo Quyết định số 157/2007/QĐ-TTg.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="bg-blue-900 rounded-b-xl p-4"></div>
-          </div>
         </div>
       </div>
       <Testimonial />
