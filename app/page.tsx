@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
+import './css/style.css';
 
 export default function Home() {
 
@@ -76,11 +77,18 @@ export default function Home() {
               subTitle={<>Mã trường <b>THP</b></>}
             />
             <div className="container mx-auto 2xl:px-40">
-              <div className="flex flex-col md:flex-row gap-2 md:gap-4 mb-4 font-bold px-2 md:px-0">
-                <a href="https://admission.dhhp.edu.vn/catalog" className="px-4 py-3 rounded bg-blue-900 text-white flex-1 md:text-lg text-center">
+              <div className="flex flex-col md:flex-row gap-2 md:gap-4 mb-4 font-bold px-2 md:px-0 uppercase">
+                <button type="button" className="px-4 py-3 rounded bg-blue-900 text-white flex-1 md:text-lg text-center">
                   Các ngành đào tạo
+                </button>
+                <a href="https://admission.dhhp.edu.vn/catalog" className="px-4 py-3 uppercase rounded bg-gray-500 text-white flex-1 md:text-lg text-center hover:bg-blue-900 transition duration-500 relative">
+                  <div>Thông tin chi tiết các ngành</div>
+                  <div className="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
                 </a>
-                <button type="button" className="px-4 py-3 rounded bg-gray-500 text-white flex-1 md:text-lg text-center">Điểm chuẩn Đại học Hải Phòng năm 2024</button>
               </div>
               <div className="pb-4 md:pb-10 px-2 md:px-0">
                 <img src="https://dhhp.edu.vn/admissions/cac-nganh-dao-tao.jpg" alt="IMG" className="w-full rounded-xl shadow-lg" />
@@ -348,7 +356,7 @@ export default function Home() {
 
         </div>
       </div>
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* <div style={{
         backgroundImage: 'url(https://w.ladicdn.com/s1440x725/5c7362c6c417ab07e5196b05/725-d-20240130185746-2z-p7.png)'
       }}>
