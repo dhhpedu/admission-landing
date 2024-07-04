@@ -1,11 +1,9 @@
-import { Menu } from "./data/menu";
 import { Footer, Heading1, WhyChooseUs, Statistics, Testimonial, EventComponent, Infrastructure } from "./components";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
-import Link from "next/link";
+import { faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
 import './css/style.css';
+import Header from "./components/layout/header";
 
 export default function Home() {
 
@@ -14,30 +12,7 @@ export default function Home() {
       <Head>
         <title>Tuyển sinh - Trường Đại Học Hải Phòng</title>
       </Head>
-      <header className="md:fixed top-0 left-0 right-0 z-20">
-        <div className="bg-white">
-          <div className="container mx-auto">
-            <div className="flex items-center gap-4 justify-between">
-              <Link href="/">
-                <Image src='https://dhhp.edu.vn/admissions/logo.png' alt="LOGO" className="2xl:w-72 w-64 py-2" width={300} height={70} />
-              </Link>
-              <div className="flex-1 md:flex hidden items-center gap-4 justify-center">
-                {
-                  Menu.map((value, index) => (
-                    <div key={index} className="py-1 text-sm font-medium 2xl:text-lg">
-                      <a href={value.url} className="hover:border-b-2 border-blue-500 py-1">{value.label}</a>
-                    </div>
-                  ))
-                }
-              </div>
-              <a href="https://dkxt.dhhp.edu.vn" className="hidden md:block 2xl:px-8 px-6 2xl:py-3 py-2 rounded-full text-sm 2xl:text-base bg-blue-600 text-white font-medium hover:bg-blue-700">Đăng ký xét tuyển</a>
-              <button type="button" className="text-slate-800 h-10 w-10 border mr-2 rounded-lg md:hidden">
-                <FontAwesomeIcon icon={faBars} />
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
       <main className="md:pt-10">
         <div className="hero relative">
           <a
@@ -74,7 +49,7 @@ export default function Home() {
             <Heading1
               center
               title="CÁC NGÀNH ĐÀO TẠO"
-              subTitle={<>Mã trường <b>THP</b></>}
+              subTitle={<>Mã trường <b className="text-red-500">THP</b></>}
             />
             <div className="container mx-auto 2xl:px-40">
               <div className="flex flex-col md:flex-row gap-2 md:gap-4 mb-4 font-bold px-2 md:px-0 uppercase">
@@ -134,7 +109,7 @@ export default function Home() {
                   <div className="bg-white rounded md:bg-transparent p-4 md:p-0">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
                       <div className="mb-1"><b>1. Đối với phương thức 1:</b> Xét tuyển kết quả thi tốt nghiệp THPT.</div>
-                      <ul className="list-disc pl-10">
+                      <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
                           Thời gian đăng ký, điều chỉnh nguyện vọng xét tuyển (không giới hạn số lần) từ ngày <b>18/07/2024</b> đến <b>17h00 ngày 30/07/2024</b>.
                         </li>
@@ -145,7 +120,7 @@ export default function Home() {
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
                       <div className="mb-1"><b>2. Đối với phương thức 2:</b> Xét tuyển kết quả học tập THPT</div>
-                      <ul className="list-disc pl-10">
+                      <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
                           Thời gian tiếp nhận hồ sơ xét tuyển: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 30/07/2024</b>;
                         </li>
@@ -156,7 +131,7 @@ export default function Home() {
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
                       <div className="mb-1"><b>3. Đối với phương thức 3</b>: Xét tuyển kết hợp giữa Chứng chỉ quốc tế (IELTS, TOEFL iBT, TOEIC, Tiếng Trung HSK, <span className="text-red-500">Tiếng Nhật JNPT</span>) và kết quả thi tốt nghiệp THPT hoặc kết quả học tập THPT năm lớp 11 và HK1 năm lớp 12</div>
-                      <ul className="list-disc pl-10">
+                      <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
                           Thời gian tiếp nhận hồ sơ xét tuyển: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 30/07/2024</b>.
                         </li>
@@ -167,7 +142,7 @@ export default function Home() {
                     </div>
                     <div className="rounded mb-2" data-aos="fade-up" data-aos-duration="1000">
                       <div className="mb-1"><b>4. Đối với phương thức 4</b>: Xét kết quả thi đánh giá năng lực, đánh giá tư duy năm 2024 do ĐHQG Hà Nội, ĐHQG thành phố HCM, ĐH Bách Khoa Hà Nội tổ chức.</div>
-                      <ul className="list-disc pl-10">
+                      <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
                           Thời gian tiếp nhận hồ sơ xét tuyển: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 30/07/2024</b>.
                         </li>
@@ -178,7 +153,7 @@ export default function Home() {
                     <div className="rounded mb-2" data-aos="fade-up" data-aos-duration="1000">
                       <div className="mb-1"><b>5. Đối với phương thức 5</b>: Xét tuyển thẳng theo quy định của Bộ GDĐT</div>
                       <div className="mb-1">Điều kiện đăng ký xét tuyển: thí sinh phải đáp ứng những quy định tại Điều 8 Quy chế tuyển sinh ban hành kèm theo Thông tư số 08/2022/TT-BGDĐT ngày 06/6/2022.</div>
-                      <ul className="list-disc pl-10">
+                      <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
                           Thời gian nộp hồ sơ đăng ký xét tuyển thẳng: trước <b>17h00</b> ngày <b>30/06/2024</b>.
                         </li>
@@ -189,7 +164,7 @@ export default function Home() {
                     </div>
                     <div className="rounded" data-aos="fade-up" data-aos-duration="1000">
                       <div className="mb-1"><b>Hồ sơ đăng ký dự thi môn Năng khiếu</b></div>
-                      <ul className="list-disc pl-10">
+                      <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
                           Thời gian tiếp nhận hồ sơ đăng ký dự thi: từ ngày <b>07/06/2024</b> đến <b>17h00</b> ngày <b>25/07/2024</b>
                         </li>
@@ -210,7 +185,7 @@ export default function Home() {
         <div style={{
           backgroundImage: 'url(https://w.ladicdn.com/s1440x727/5c7362c6c417ab07e5196b05/727-d-20240130180038-jenam.png)'
         }}>
-          <div className="container mx-auto py-10 px-2 md:px-0  drop-shadow">
+          <div className="container mx-auto py-4 md:py-10 px-2 md:px-0  drop-shadow">
             <div className="md:flex gap-2 md:gap-4 2xl:gap-10 items-center">
               <div className="md:w-2/3 mb-4">
                 <div className="text-xl text-white md:text-3xl font-bold mb-4 md:mb-8" data-aos="fade-up" data-aos-duration="1000">HỒ SƠ XÉT TUYỂN HỌC BẠ</div>
@@ -284,12 +259,12 @@ export default function Home() {
         <div style={{
           backgroundImage: 'url(https://w.ladicdn.com/s1440x962/5c7362c6c417ab07e5196b05/980-d-20240130180951-tb20q.png)'
         }} className="py-4 md:py-20 bg-cover" id="method">
-          <div className="container mx-auto py-10 px-2 md:px-0">
+          <div className="container mx-auto py-4 md:py-10 px-2 md:px-0">
             <Heading1 center title="Chế độ chính sách với sinh viên" white />
             <div className="bg-white rounded-xl mx-auto border-2 border-white bg-cover max-w-[1000px]">
               <div className="bg-red-500 max-w-[1000px] mx-auto rounded-xl" data-aos="fade-up" data-aos-duration="1000" >
                 <div className="p-4 md:p-10">
-                  <div className="text-white">
+                  <div className="text-white text-sm md:text-base">
                     <div className="mb-2">
                       Xem người học là trung tâm của mọi hoạt động; Bên cạnh chú trọng đầu tư về chất lượng đào tạo cùng dịch vụ trải nghiệm sinh viên sống động, ĐHHP luôn tạo điều kiện tốt nhất cho người học, trong đó có việc cung cấp đầy đủ, kịp thời cho sinh viên thông tin về chính sách học bổng.
                     </div>
@@ -298,25 +273,25 @@ export default function Home() {
                     </div>
                     <div className="mb-2">Hàng năm, Trường ĐHHP dành hàng chục tỉ đồng cho những loại hình học bổng sau:</div>
                   </div>
-                  <div className="text-white text-xl font-bold mb-2 uppercase">1. Học bổng Khuyến khích học tập</div>
-                  <div className="p-4 rounded bg-white mb-4">
+                  <div className="text-white md:text-xl font-bold mb-2 uppercase">1. Học bổng Khuyến khích học tập</div>
+                  <div className="p-4 rounded bg-white mb-4 text-sm md:text-base">
                     Tỉ lệ sinh viên đạt học bổng chiếm tỷ lệ từ 5% đến 8% trên tổng số hơn 10.000 sinh viên chính quy toàn trường; trị giá học bổng từ 100% đến 120% mức học phí từng ngành đạo tạo, chương trình đào tạo.
                   </div>
 
-                  <div className="text-white text-xl font-bold mb-2 uppercase">2. Học bổng tài trợ từ các tổ chức, doanh nghiệp theo chương trình &quot;Ươm mầm tài năng Đại học Hải Phòng&quot;.</div>
-                  <div className="p-4 bg-white mb-4">
+                  <div className="text-white md:text-xl font-bold mb-2 uppercase">2. Học bổng tài trợ từ các tổ chức, doanh nghiệp theo chương trình &quot;Ươm mầm tài năng Đại học Hải Phòng&quot;.</div>
+                  <div className="p-4 bg-white mb-4 text-sm md:text-base">
                     Nhà trường liên kết chặt chẽ với các doanh nghiệp, tổ chức trong và ngoài nước hàng năm dành tặng cho sinh viên nhà trường hàng trăm triệu đồng mỗi năm như học bổng của Ngân hàng TMCP Vietinbank, Vietcombank; Tổ chức Tầm nhìn thế giới World Vision; Tập đoàn LG; Quỹ Giáo dục Quốc tế Hàn Quốc Woonjung; Công ty TNHH Pegatron,… dành tặng cho sinh viên trúng tuyển đạt thủ khoa đầu ngành, sinh viên đạt thành tích cao tại các cuộc thi cấp quốc gia và quốc tế trúng tuyển vào trường, những sinh viên đạt thành tích cao trong học tập và rèn luyện, sinh viên có hoàn cảnh khó khăn vươn lên trong học tập.
                   </div>
-                  <div className="text-white text-xl font-bold mb-2 uppercase">3. Học bổng tài năng:</div>
-                  <div className="bg-white p-4 mb-4">
+                  <div className="text-white md:text-xl font-bold mb-2 uppercase">3. Học bổng tài năng:</div>
+                  <div className="bg-white p-4 mb-4 text-sm md:text-base rounded">
                     Đặc biệt, trong năm học 2024 - 2025, Nhà trường liên kết với các doanh nghiệp trên địa bàn thành phố dành các suất học bổng có giá trị cao cho các sinh viên có thành tích học tập giỏi, xuất sắc vào học chương trình chất lượng cao tại trường. Bên cạnh đó, sinh viên chương trình CLC được tạo điều kiện về thực tập thực hành tại các Doanh nghiệp, tổ chức tài trợ và có chính sách ưu tiên trong tuyển dụng.
 
                   </div>
-                  <div className="text-white text-xl font-bold mb-2 uppercase">4. Các chính sách hỗ trợ khác</div>
+                  <div className="text-white md:text-xl font-bold mb-2 uppercase">4. Các chính sách hỗ trợ khác</div>
 
-                  <div className="p-4 bg-white rounded">
+                  <div className="p-4 bg-white rounded text-sm md:text-base">
                     <div className="font-semibold mb-2 text-lg">Nhà trường đảm bảo thực hiện đầy đủ các chính sách cho sinh viên theo các quy định của nhà nước, cụ thể:</div>
-                    <ul className="list-disc pl-10">
+                    <ul className="list-disc md:pl-10 pl-4">
                       <li>
                         Chính sách hỗ trợ học phí và chi phí sinh hoạt cho sinh viên sư phạm theo Nghị định 116/2020/NĐ-CP. Mỗi sinh viên được hỗ trợ học phí bằng mức thu học phí của cơ sở đào tạo và được hỗ trợ chi phí học tập 36,3 tr đồng/năm học.
                       </li>
@@ -351,11 +326,11 @@ export default function Home() {
           </div>
         </div> */}
       </main>
-      <div className="bg-stone-100">
+      {/* <div className="bg-stone-100">
         <div className="container mx-auto py-4 md:py-10">
 
         </div>
-      </div>
+      </div> */}
       {/* <Testimonial /> */}
       {/* <div style={{
         backgroundImage: 'url(https://w.ladicdn.com/s1440x725/5c7362c6c417ab07e5196b05/725-d-20240130185746-2z-p7.png)'

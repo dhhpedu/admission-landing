@@ -21,20 +21,24 @@ const EventComponent: React.FC = () => {
 
         <div className="md:flex" id="event">
             <div className="md:w-1/2">
-                <Swiper className="h-full"
-                    ref={swiperRef}
-                    autoplay
-                    modules={[Autoplay]}
-                    loop
-                >
-                    {
-                        photos.map((photo, index) => (
-                            <SwiperSlide key={photo.id}>
-                                <Image src={photo.url} width={950} height={660} alt="IMG" className="h-full object-cover w-full" />
-                            </SwiperSlide>
-                        ))
-                    }
-                </Swiper>
+                {
+                    photos.length > 0 && (
+                        <Swiper className="h-full"
+                            ref={swiperRef}
+                            autoplay
+                            modules={[Autoplay]}
+                            loop
+                        >
+                            {
+                                photos.map((photo, index) => (
+                                    <SwiperSlide key={photo.id}>
+                                        <Image src={photo.url} width={950} height={660} alt="IMG" className="h-full object-cover w-full" />
+                                    </SwiperSlide>
+                                ))
+                            }
+                        </Swiper>
+                    )
+                }
             </div>
             <div className="md:w-1/2">
                 <div className="bg-red-600 h-full text-white p-4 md:p-10 2xl:p-20">
@@ -49,8 +53,8 @@ const EventComponent: React.FC = () => {
                     <div className="grid grid-cols-3 gap-4 mb-4">
                         {
                             photos.map((photo) => (
-                                <div className="w-full md:h-40 bg-slate-100" key={photo.id}>
-                                    <img src={photo.url} alt="IMG" />
+                                <div className="w-full md:h-40 bg-slate-100 overflow-hidden" key={photo.id}>
+                                    <Image src={photo.url} alt="IMG" className="w-full h-full object-cover hover:scale-110 transition-all duration-500" width={250} height={170} />
                                 </div>
                             ))
                         }
