@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudDownload, faDownload, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
 import './css/style.css';
 import Header from "./components/layout/header";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -90,16 +91,16 @@ export default function Home() {
                 <div className="relative mb-2" data-aos="fade-up" data-aos-duration="1000">
                   <div className="flexitems-center">
                     <div style={{
-                      backgroundImage: 'url(https://w.ladicdn.com/s600x400/5c7362c6c417ab07e5196b05/22-20240130175108-x4q3i.png)'
+                      backgroundImage: 'url(https://dhhp.edu.vn/admissions/phuong-thuc.png)'
                     }} className="h-[60px] w-[325px] bg-no-repeat bg-left text-center md:flex items-center justify-center hidden">
                       <div className="text-2xl font-medium text-white">PHƯƠNG THỨC</div>
                     </div>
                     <div className="flex-1">
-                      <img src="https://w.ladicdn.com/s600x500/5c7362c6c417ab07e5196b05/30-20240130175108-9r1ke.png" alt="IMG" className="absolute right-10 md:right-40 bottom-4 md:bottom-10 animated tada w-20 md:w-auto" />
+                      <Image src="https://dhhp.edu.vn/admissions/loa.png" alt="IMG" className="absolute right-10 md:right-40 bottom-4 md:bottom-10 animated tada w-20 md:w-64 2xl:w-auto" width={310} height={194} />
                     </div>
                   </div>
                   <div className="flex items-end">
-                    <img src="https://w.ladicdn.com/s750x450/5c7362c6c417ab07e5196b05/24-20240130175108-qhoej.png" className="w-52 md:w-96" />
+                    <Image src="https://dhhp.edu.vn/admissions/xet-tuyen.png" className="w-52 md:w-96" width={384} height={96} alt="XET TUYEN" />
                     <div>
                       <img src="https://w.ladicdn.com/s550x400/5c7362c6c417ab07e5196b05/23-20240130175108-pyjde.png" className="w-28 md:w-52" />
                     </div>
@@ -108,7 +109,7 @@ export default function Home() {
                 <div className="md:px-0 px-2 drop-shadow">
                   <div className="bg-white rounded md:bg-transparent p-4 md:p-0">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
-                      <div className="mb-1"><b>1. Đối với phương thức 1:</b> Xét tuyển kết quả thi tốt nghiệp THPT.</div>
+                      <div className="mb-1"><b>1. Phương thức 1:</b> Xét kết quả thi tốt nghiệp THPT năm 2024.</div>
                       <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
                           Thời gian đăng ký, điều chỉnh nguyện vọng xét tuyển (không giới hạn số lần) từ ngày <b>18/07/2024</b> đến <b>17h00 ngày 30/07/2024</b>.
@@ -119,60 +120,51 @@ export default function Home() {
                       </ul>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
-                      <div className="mb-1"><b>2. Đối với phương thức 2:</b> Xét tuyển kết quả học tập THPT</div>
+                      <div className="mb-1"><b>2. Phương thức 2:</b> Xét tuyển kết quả học tập THPT</div>
                       <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
-                          Thời gian tiếp nhận hồ sơ xét tuyển: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 30/07/2024</b>;
+                          Với thí sinh tốt nghiệp năm 2024: thực hiện đăng ký trên Cổng dịch vụ công quốc gia hoặc Hệ thống (<a href="https://thisinh.thithptquocgia.edu.vn/" className="font-bold text-blue-700">Tại Đây</a>) theo hướng dẫn của Bộ GDĐT
                         </li>
                         <li className="mb-1">
-                          Thí sinh đăng ký trực tuyến tại địa chỉ http://dkxt.dhhp.edu.vn hoặc nộp trực tiếp tại phòng Khảo thí & ĐBCL, nhà C2, Trường Đại học Hải Phòng hoặc gửi chuyển phát qua bưu điện.
+                          Với thí sinh tốt nghiệp từ năm 2023 trở về trước: Nộp trực tiếp hoặc gửi chuyển phát về địa chỉ Phòng Khảo thí và Đảm bảo chất lượng, Trường Đại học Hải Phòng - Nhà C2, Số 171 Pham Đăng Lưu, Kiến An, Hải Phòng. Thời gian tiếp nhận hồ sơ: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 30/07/2024</b>.
                         </li>
                       </ul>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
-                      <div className="mb-1"><b>3. Đối với phương thức 3</b>: Xét tuyển kết hợp giữa Chứng chỉ quốc tế (IELTS, TOEFL iBT, TOEIC, Tiếng Trung HSK, <span className="text-red-500">Tiếng Nhật JNPT</span>) và kết quả thi tốt nghiệp THPT hoặc kết quả học tập THPT năm lớp 11 và HK1 năm lớp 12</div>
+                      <div className="mb-1"><b>3. Phương thức 3:</b> Xét tuyển kết hợp giữa Chứng chỉ quốc tế (IELTS, TOEFL iBT, TOEIC, Tiếng Trung HSK, Tiếng Nhật JLPT) và Kết quả thi tốt nghiệp THPT năm 2024 hoặc Kết quả học tập THPT năm lớp 11 và HK1 năm lớp 12</div>
                       <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
-                          Thời gian tiếp nhận hồ sơ xét tuyển: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 30/07/2024</b>.
-                        </li>
-                        <li className="mb-1">
-                          Thí sinh có thể nộp trực tiếp hoặc gửi chuyển phát qua bưu điện.
+                          Thí sinh có thể nộp trực tiếp hoặc gửi chuyển phát qua bưu điện. Thời gian tiếp nhận hồ sơ xét tuyển: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 30/07/2024</b>.
                         </li>
                       </ul>
                     </div>
                     <div className="rounded mb-2" data-aos="fade-up" data-aos-duration="1000">
-                      <div className="mb-1"><b>4. Đối với phương thức 4</b>: Xét kết quả thi đánh giá năng lực, đánh giá tư duy năm 2024 do ĐHQG Hà Nội, ĐHQG thành phố HCM, ĐH Bách Khoa Hà Nội tổ chức.</div>
+                      <div className="mb-1"><b>4. Phương thức 4:</b> Xét kết quả thi đánh giá năng lực, đánh giá tư duy năm 2024 do ĐHQG Hà Nội, ĐHQG thành phố HCM, ĐH Bách Khoa Hà Nội tổ chức.</div>
                       <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
-                          Thời gian tiếp nhận hồ sơ xét tuyển: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 30/07/2024</b>.
-                        </li>
-                        <li className="mb-1">
-                          Thí sinh có thể nộp trực tiếp hoặc gửi chuyển phát qua bưu điện.
+                          Thí sinh có thể nộp trực tiếp hoặc gửi chuyển phát qua bưu điện. Thời gian tiếp nhận hồ sơ xét tuyển: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 30/07/2024.</b>
                         </li>
                       </ul></div>
                     <div className="rounded mb-2" data-aos="fade-up" data-aos-duration="1000">
-                      <div className="mb-1"><b>5. Đối với phương thức 5</b>: Xét tuyển thẳng theo quy định của Bộ GDĐT</div>
-                      <div className="mb-1">Điều kiện đăng ký xét tuyển: thí sinh phải đáp ứng những quy định tại Điều 8 Quy chế tuyển sinh ban hành kèm theo Thông tư số 08/2022/TT-BGDĐT ngày 06/6/2022.</div>
+                      <div className="mb-1"><b>5. Đối với phương thức 5:</b> Xét tuyển thẳng theo quy định của Bộ GD&ĐT</div>
+                      <div className="mb-1"></div>
                       <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
-                          Thời gian nộp hồ sơ đăng ký xét tuyển thẳng: trước <b>17h00</b> ngày <b>30/06/2024</b>.
+                          Điều kiện đăng ký xét tuyển: thí sinh phải đáp ứng những quy định tại Điều 8 Quy chế tuyển sinh ban hành kèm theo Thông tư số 08/2022/TT-BGDĐT ngày 06/6/2022.
                         </li>
                         <li className="mb-1">
-                          Thí sinh có thể nộp trực tiếp hoặc gửi chuyển phát qua bưu điện.
+                          Thí sinh có thể nộp trực tiếp hoặc gửi chuyển phát qua bưu điện. Thời gian nộp hồ sơ đăng ký xét tuyển thẳng: trước <b>17h00 ngày 30/06/2024.</b>
                         </li>
                       </ul>
                     </div>
                     <div className="rounded" data-aos="fade-up" data-aos-duration="1000">
-                      <div className="mb-1"><b>Hồ sơ đăng ký dự thi môn Năng khiếu</b></div>
+                      <div className="mb-1"><b>Đăng ký dự thi môn Năng khiếu</b></div>
                       <ul className="list-disc md:pl-10 pl-4">
                         <li className="mb-1">
-                          Thời gian tiếp nhận hồ sơ đăng ký dự thi: từ ngày <b>07/06/2024</b> đến <b>17h00</b> ngày <b>25/07/2024</b>
+                        Thí sinh có thể nộp trực tiếp hoặc gửi chuyển phát qua bưu điện. Thời gian tiếp nhận hồ sơ đăng ký dự thi: từ ngày <b>07/06/2024</b> đến <b>17h00 ngày 25/07/2024.</b>
                         </li>
                         <li className="mb-1">
-                          Thí sinh có thể nộp trực tiếp hoặc gửi chuyển phát qua bưu điện.
-                        </li>
-                        <li className="mb-1">
-                          Thí sinh sử dụng kết quả thi năng khiếu năm 2024 của các cơ sở đào tạo khác phải nộp giấy chứng nhận kết quả thi năng khiếu (bản chính) về Trường trước <b>17h00</b> ngày <b>30/07/2024</b>.
+                        Thí sinh sử dụng kết quả thi năng khiếu năm 2024 của các cơ sở đào tạo khác phải nộp giấy chứng nhận kết quả thi năng khiếu (bản chính) về Trường trước <b>17h00 ngày 30/07/2024.</b>
                         </li>
                       </ul>
                     </div>
