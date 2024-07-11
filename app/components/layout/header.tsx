@@ -27,7 +27,7 @@ const Header: React.FC = () => {
                                 ))
                             }
                         </div>
-                        <a href="https://dkxt.dhhp.edu.vn" className="hidden md:block 2xl:px-8 px-6 2xl:py-3 py-2 rounded-full text-sm 2xl:text-base bg-blue-600 text-white font-medium hover:bg-blue-700">Đăng ký xét tuyển</a>
+                        <a href="https://dkxt.dhhp.edu.vn" className="hidden md:block 2xl:px-8 px-6 2xl:py-3 py-2 rounded-full text-sm 2xl:text-base bg-blue-600 text-white font-medium hover:bg-blue-700">Tra cứu kết quả</a>
                         <button type="button" className="text-slate-800 h-10 w-10 border mr-2 rounded-lg md:hidden" onClick={() => setOpen(true)}>
                             <FontAwesomeIcon icon={faBars} />
                         </button>

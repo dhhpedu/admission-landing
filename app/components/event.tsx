@@ -10,6 +10,7 @@ const EventComponent: React.FC = () => {
 
     const [photos, setPhotos] = useState<any[]>([]);
     const swiperRef = useRef<SwiperRef>(null);
+    const [index, setIndex] = useState<number>(0);
 
     useEffect(() => {
         fetch(`https://dhhp.edu.vn/open-api/photos?apikey=lJQnpvudu92zeOZ&PostId=38932`).then(value => value.json().then(data => {
@@ -28,6 +29,9 @@ const EventComponent: React.FC = () => {
                             autoplay
                             modules={[Autoplay]}
                             loop
+                            onSlideChange={(swiper) => {
+                                setIndex(swiper.realIndex);
+                            }}
                         >
                             {
                                 photos.map((photo, index) => (
@@ -52,9 +56,9 @@ const EventComponent: React.FC = () => {
                     </div>
                     <div className="grid grid-cols-3 gap-4 mb-4">
                         {
-                            photos.map((photo) => (
-                                <div className="w-full md:h-40 bg-slate-100 overflow-hidden" key={photo.id}>
-                                    <Image src={photo.url} alt="IMG" className="w-full h-full object-cover hover:scale-110 transition-all duration-500" width={250} height={170} />
+                            photos.map((photo, i) => (
+                                <div className="w-full md:h-40 overflow-hidden" key={photo.id}>
+                                    <Image src={photo.url} alt="IMG" className={`w-full h-full object-cover hover:scale-110 transition-all duration-500 ${index === i ? 'border-2' : '' } p-1`} width={250} height={170} />
                                 </div>
                             ))
                         }

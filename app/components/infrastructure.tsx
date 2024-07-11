@@ -102,7 +102,7 @@ const Infrastructure: React.FC = () => {
                                     </div>
                                     <div className="md:w-1/2">
                                         <div className="relative h-full">
-                                            <Image src={galleries[3].thumbnail} alt="IMG" className="h-full w-full object-cover rounded" width={760} height={528} />
+                                            <Image src={galleries[3].thumbnail} alt="IMG" className="h-full w-full object-cover rounded 2xl:h-[530px]" width={760} height={530} />
                                             <div className="h-1/2 text-center bg-no-repeat bg-cover bg-center absolute bottom-0 left-0 right-0 p-4 bg-center text-white flex items-end rounded" style={{
                                                 backgroundImage: 'url(https://w.ladicdn.com/s600x600/5c7362c6c417ab07e5196b05/49-20240131065024-fdars.png)'
                                             }}>
@@ -160,7 +160,7 @@ const Infrastructure: React.FC = () => {
                                     </div>
                                     <div className="md:w-1/2">
                                         <div className="relative h-full">
-                                            <Image src={galleries[7].thumbnail} alt="IMG" className="h-full w-full object-cover rounded" width={760} height={528} />
+                                            <Image src={galleries[7].thumbnail} alt="IMG" className="h-full w-full object-cover rounded 2xl:h-[530px]" width={760} height={530} />
                                             <div className="h-1/2 text-center bg-no-repeat bg-cover bg-center absolute bottom-0 left-0 right-0 p-4 bg-center text-white flex items-end rounded" style={{
                                                 backgroundImage: 'url(https://w.ladicdn.com/s600x600/5c7362c6c417ab07e5196b05/49-20240131065024-fdars.png)'
                                             }}>

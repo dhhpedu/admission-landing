@@ -17,7 +17,7 @@ export default function Home() {
         <div className="hero relative">
           <a
             href="https://dkxt.dhhp.edu.vn"
-            className="animate-bounce bg-blue-600 text-xs md:text-2xl left-10 py-1 md:py-2 2xl:py-3 px-2 md:px-6 2xl:px-8 text-white font-medium absolute top-[120px] md:top-[400px] 2xl:top-[550px] md:left-[200px] 2xl:left-[270px] text-lg 2xl:text-3xl border-2 rounded-full border-white hover:bg-blue-700 transaction duration-500">Đăng ký xét tuyển</a>
+            className="animate-bounce bg-blue-600 text-xs md:text-2xl left-10 py-1 md:py-2 2xl:py-3 px-2 md:px-6 2xl:px-8 text-white font-medium absolute top-[120px] md:top-[400px] 2xl:top-[550px] md:left-[200px] 2xl:left-[270px] text-lg 2xl:text-3xl border-2 rounded-full border-white hover:bg-blue-700 transaction duration-500">Tra cứu kết quả</a>
           <img src="https://dhhp.edu.vn/admissions/admission-hero.png" />
         </div>
         {
@@ -31,10 +31,8 @@ export default function Home() {
               center
               title="TẠI SAO NÊN CHỌN ĐẠI HỌC Hải phòng?"
               subTitle={
-                <div className="text-sm md:text-base">
-                  <div>Trường Đại học Hải Phòng tự hào mang đến cho sinh viên một môi trường học tập hiện đại, thân thiện và chuyên nghiệp, đào tạo đa ngành, đa lĩnh vực</div>
-                  <div>Ký Túc Xá khang trang mới được bảo dưỡng, sửa chữa</div>
-                  <div>Khuôn viên rộng lớn, có khu phức hợp thể thao hiện đại.</div>
+                <div className="text-sm md:text-base max-w-[1000px]">
+                  Trường Đại học Hải Phòng tự hào mang đến cho sinh viên: (i) môi trường học tập hiện đại, thân thiện và chuyên nghiệp; (ii) đào tạo đa ngành, đa lĩnh vực; (iii) khuôn viên rộng lớn, ký túc xá khang trang 2.000 chỗ ở, khu phức hợp thể thao hiện đại.
                 </div>
               }
             />
@@ -66,7 +64,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="pb-4 md:pb-10 px-2 md:px-0">
-                <img src="https://dhhp.edu.vn/admissions/cac-nganh-dao-tao.jpg" alt="IMG" className="w-full rounded-xl shadow-lg" />
+                <img src="https://dhhp.edu.vn/admissions/cac-nganh-dao-tao.png" alt="IMG" className="w-full rounded-xl shadow-lg" />
               </div>
             </div>
           </div>
@@ -102,7 +100,9 @@ export default function Home() {
                   </div>
                   <div className="flex items-end">
                     <img src="https://w.ladicdn.com/s750x450/5c7362c6c417ab07e5196b05/24-20240130175108-qhoej.png" className="w-52 md:w-96" />
-                    <div><img src="https://w.ladicdn.com/s550x400/5c7362c6c417ab07e5196b05/23-20240130175108-pyjde.png" className="w-28 md:w-52" /></div>
+                    <div>
+                      <img src="https://w.ladicdn.com/s550x400/5c7362c6c417ab07e5196b05/23-20240130175108-pyjde.png" className="w-28 md:w-52" />
+                    </div>
                   </div>
                 </div>
                 <div className="md:px-0 px-2 drop-shadow">
@@ -191,47 +191,40 @@ export default function Home() {
                 <div className="text-xl text-white md:text-3xl font-bold mb-4 md:mb-8" data-aos="fade-up" data-aos-duration="1000">HỒ SƠ XÉT TUYỂN HỌC BẠ</div>
                 <div className="grid md:grid-cols-2 gap-2 md:gap-4 mb-4 text-sm">
                   <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000">
-                    <div className="font-medium text-base mb-1">1. Xét tuyển kết quả thi tốt nghiệp THPT gồm:</div>
-                    -  Phiếu đăng ký xét tuyển theo mẫu (tải tại <a href="http://dkxt.dhhp.edu.vn" className="text-blue-500">ĐÂY</a>);<br />
-                    -  Bản sao (công chứng) CCCD/CMND;<br />
-                    -  Bản sao (công chứng) học bạ THPT;<br />
-                    -  Bản sao bằng tốt nghiệp THPT (nếu có);<br />
-                    -  Giấy chứng nhận ưu tiên (nếu có ưu tiên);<br />
-                    -  Lệ phí xét tuyển: 20.000 đồng/1 nguyện vọng.<br />
+                    <div className="font-medium text-base mb-1">1. Xét kết quả thi tốt nghiệp THPT năm 2024</div>
+                    Thí sinh phải đăng ký nguyện vọng trên cổng Tuyển sinh quốc gia: <a href="https://thisinh.thitotnghiepthpt.edu.vn/" className="text-blue-500">https://thisinh.thitotnghiepthpt.edu.vn/</a> từ ngày <b>18/7/2024</b> đến <b>30/7/2024</b>
                   </div>
                   <div className="p-4 md:p-6 rounded-xl bg-red-600 text-white transition duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div className=" mb-1"><span className="text-base font-medium">2. Xét tuyển kết hợp</span> Chứng chỉ quốc tế và kết quả thi tốt nghiệp THPT hoặc kết quả học tập THPT năm lớp 11 và HK1 năm lớp 12</div>
                     -  Phiếu đăng ký xét tuyển theo mẫu (tải tại <a href="http://dkxt.dhhp.edu.vn">ĐÂY</a>);<br />
-                    -  Bản sao (công chứng) CCCD/CMND;<br />
-                    -  Bản sao (công chứng) chứng chỉ quốc tế;<br />
-                    -  Bản sao (công chứng) học bạ THPT;<br />
+                    -  Bản sao CCCD, chứng chỉ quốc tế, học bạ THPT (công chứng)<br />
                     -  Bản sao bằng tốt nghiệp THPT (nếu có);<br />
                     -  Giấy chứng nhận ưu tiên (nếu có ưu tiên).<br />
                     -  Lệ phí xét tuyển: 20.000 đồng/1 nguyện vọng.<br />
                   </div>
                   <div className="p-4 md:p-6 rounded-xl bg-red-600 text-white transition duration-300" data-aos="fade-up" data-aos-duration="1000">
-                    <div className="font-medium text-base mb-1">3. Xét kết quả thi đánh giá năng lực, đánh giá tư duy năm 2024</div>
-                    -  Phiếu đăng ký xét tuyển theo mẫu (tải tại <a href="https://dkxt.dhhp.edu.vn">ĐÂY</a>); <br />
-                    -  Bản sao (công chứng) CCCD/CMND;<br />
-                    -  Bản sao (công chứng) kết quả thi Đánh giá năng lực, đánh giá tư duy năm 2024;<br />
-                    -  Bản sao (công chứng) học bạ THPT;<br />
-                    -  Bản sao bằng tốt nghiệp THPT(nếu có) hoặc Giấy chứng nhận tốt nghiệp THPT;<br />
-                    -  Giấy chứng nhận ưu tiên (nếu có ưu tiên).<br />
+                    <div className="mb-1"><span className="text-base font-medium">3. Xét tuyển kết hợp giữa Chứng chỉ quốc tế</span> (IELTS, TOEFL iBT, TOEIC, Tiếng Trung HSK) và kết quả thi tốt nghiệp THPT hoặc kết quả học tập THPT năm lớp 11 và HK1 năm lớp 12</div>
+                    -  Chứng chỉ quốc tế (bản sao công chứng)<br />
+                    -  Phiếu đăng ký (theo MẪU)<br />
                   </div>
                   <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div className="font-medium text-base mb-1">4. Xét tuyển thẳng theo quy định của Bộ GDĐT</div>
-                    -  Phiếu đăng ký xét tuyển thẳng (tải tại <a href="https://dkxt.dhhp.edu.vn">ĐÂY</a>);<br />
-                    -  Bản sao (công chứng) Căn cước công dân/CMND;<br />
-                    -  Bản sao (công chứng) giấy chứng nhận đạt các giải Nhất, Nhì, Ba các môn thi chọn học sinh giỏi quốc gia, quốc tế hoặc thi khoa học, kỹ thuật cấp quốc gia, quốc tế; hoặc GCN đạt các giải Nhất, Nhì, Ba trong các kỳ thi tay nghề khu vực ASEAN và thi tay nghề quốc tế; hoặc các bản sao các GCN đối tượng tuyển thẳng khác.
+                    <div className="mb-1"><span className="font-medium text-base">4. Xét kết quả thi Đánh giá năng lực hoặc đánh giá tư duy</span> năm 2024 do Đại học Quốc gia Hà Nội, Đại học Quốc gia Thành phố Hồ Chí Minh, Đại học Bách Khoa Hà Nội tổ chức</div>
+                    -  Giấy chứng nhận kết quả thi (bản sao công chứng)<br />
+                    -  Phiếu đăng ký (theo MẪU)<br />
                   </div>
-                </div>
-                <div className="p-4 md:p-6 text-sm rounded-xl bg-white hover:text-gray-900 transition duration-300" data-aos="fade-up" data-aos-duration="1000">
-                  <div className="text-base font-medium mb-1">5. Hồ sơ đăng ký dự thi môn Năng khiếu</div>
-                  -  Phiếu đăng ký dự thi theo mẫu (tải tại <a href="https://dkxt.dhhp.edu.vn">ĐÂY</a>);<br />
-                  -  Bản sao (công chứng) Căn cước công dân/CMND;<br />
-                  -  03 ảnh 4x6;<br />
-                  -  Lệ phí thi: 300.000 đồng.<br />
-                  Thí sinh sử dụng kết quả thi năng khiếu năm 2024 của các cơ sở đào tạo khác phải nộp giấy chứng nhận kết quả thi năng khiếu (bản chính) về Trường trước 17h00 ngày 30/07/2024.<br />
+                  <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div className="font-medium text-base mb-1">5: Xét tuyển thẳng theo quy định của Bộ GD&ĐT</div>
+                    -  Giấy chứng nhận đạt giải (bản sao công chứng)<br />
+                    -  Phiếu đăng ký (theo MẪU)<br />
+                  </div>
+                  <div className="p-4 md:p-6 rounded-xl bg-red-600 text-white transition duration-300" data-aos="fade-up" data-aos-duration="1000">
+                    <div className="text-base font-medium mb-1">6. Hồ sơ đăng ký dự thi môn Năng khiếu</div>
+                    -  Phiếu đăng ký dự thi theo mẫu (theo MẪU);<br />
+                    -  Căn cước công dân (bản sao công chứng)<br />
+                    -  03 ảnh 4x6;<br />
+                    -  Lệ phí thi: 300.000 đồng.<br />
+                    * Thời gian nhận đăng ký từ ngày <b>07/6/2024</b> đến <b>25/7/2024</b>
+                  </div>
                 </div>
               </div>
               <div className="md:w-1/3">
