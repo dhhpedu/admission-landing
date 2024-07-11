@@ -1,7 +1,7 @@
 import { Footer, Heading1, WhyChooseUs, Statistics, Testimonial, EventComponent, Infrastructure } from "./components";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faCloudDownload, faDownload, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
 import './css/style.css';
 import Header from "./components/layout/header";
 
@@ -191,35 +191,37 @@ export default function Home() {
                 <div className="text-xl text-white md:text-3xl font-bold mb-4 md:mb-8" data-aos="fade-up" data-aos-duration="1000">HỒ SƠ XÉT TUYỂN HỌC BẠ</div>
                 <div className="grid md:grid-cols-2 gap-2 md:gap-4 mb-4 text-sm">
                   <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000">
-                    <div className="font-medium text-base mb-1">1. Xét kết quả thi tốt nghiệp THPT năm 2024</div>
+                    <div className="font-medium text-base mb-1">Phương thức 1. Xét kết quả thi tốt nghiệp THPT năm 2024</div>
                     Thí sinh phải đăng ký nguyện vọng trên cổng Tuyển sinh quốc gia: <a href="https://thisinh.thitotnghiepthpt.edu.vn/" className="text-blue-500">https://thisinh.thitotnghiepthpt.edu.vn/</a> từ ngày <b>18/7/2024</b> đến <b>30/7/2024</b>
                   </div>
                   <div className="p-4 md:p-6 rounded-xl bg-red-600 text-white transition duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div className=" mb-1"><span className="text-base font-medium">2. Xét tuyển kết hợp</span> Chứng chỉ quốc tế và kết quả thi tốt nghiệp THPT hoặc kết quả học tập THPT năm lớp 11 và HK1 năm lớp 12</div>
-                    -  Phiếu đăng ký xét tuyển theo mẫu (tải tại <a href="http://dkxt.dhhp.edu.vn">ĐÂY</a>);<br />
-                    -  Bản sao CCCD, chứng chỉ quốc tế, học bạ THPT (công chứng)<br />
-                    -  Bản sao bằng tốt nghiệp THPT (nếu có);<br />
-                    -  Giấy chứng nhận ưu tiên (nếu có ưu tiên).<br />
+                    <div className=" mb-1"><span className="text-base font-medium">Phương thức 2. Xét kết quả học tập THPT (Học bạ)</span></div>
+                    <div>1. Thí sinh phải đăng ký nguyện vọng trên cổng Tuyển sinh quốc gia: <a href="https://thisinh.thitotnghiepthpt.edu.vn/" className="text-white">https://thisinh.thitotnghiepthpt.edu.vn/</a> từ ngày 18/7/2024 đến 30/7/2024</div>
+                    <div>2. Thí sinh tốt nghiệp từ năm 2023 trở về trước nộp hồ sơ gồm:</div>
+                    -  Căn cước công dân (bản sao công chứng)<br />
+                    -  Học bạ THPT (bản sao công chứng).<br />
+                    -  Phiếu đăng ký xét tuyển (theo <a href="https://dhhp.edu.vn/admissions/phieu/phieu-dk-kq-hoc.pdf" className="font-semibold underline">MẪU <FontAwesomeIcon icon={faDownload} /></a>).<br />
+                    -  Giấy chứng nhận ưu tiên (nếu có)<br />
                     -  Lệ phí xét tuyển: 20.000 đồng/1 nguyện vọng.<br />
                   </div>
                   <div className="p-4 md:p-6 rounded-xl bg-red-600 text-white transition duration-300" data-aos="fade-up" data-aos-duration="1000">
-                    <div className="mb-1"><span className="text-base font-medium">3. Xét tuyển kết hợp giữa Chứng chỉ quốc tế</span> (IELTS, TOEFL iBT, TOEIC, Tiếng Trung HSK) và kết quả thi tốt nghiệp THPT hoặc kết quả học tập THPT năm lớp 11 và HK1 năm lớp 12</div>
+                    <div className="mb-1"><span className="text-base font-medium">Phương thức 3. Xét tuyển kết hợp giữa Chứng chỉ quốc tế (IELTS, TOEFL iBT, TOEIC, Tiếng Trung HSK) và kết quả thi tốt nghiệp THPT hoặc kết quả học tập THPT năm lớp 11 và HK1 năm lớp 12</span></div>
                     -  Chứng chỉ quốc tế (bản sao công chứng)<br />
-                    -  Phiếu đăng ký (theo MẪU)<br />
+                    -  Phiếu đăng ký (theo <a href="https://dhhp.edu.vn/admissions/phieu/phieu-dk-chung-chi-quoc-te.pdf" className="font-semibold underline">MẪU <FontAwesomeIcon icon={faDownload} /></a>)<br />
                   </div>
                   <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div className="mb-1"><span className="font-medium text-base">4. Xét kết quả thi Đánh giá năng lực hoặc đánh giá tư duy</span> năm 2024 do Đại học Quốc gia Hà Nội, Đại học Quốc gia Thành phố Hồ Chí Minh, Đại học Bách Khoa Hà Nội tổ chức</div>
+                    <div className="mb-1"><span className="font-medium text-base">Phương thức 4. Xét kết quả thi Đánh giá năng lực hoặc đánh giá tư duy năm 2024 do Đại học Quốc gia Hà Nội, Đại học Quốc gia Thành phố Hồ Chí Minh, Đại học Bách Khoa Hà Nội tổ chức</span></div>
                     -  Giấy chứng nhận kết quả thi (bản sao công chứng)<br />
-                    -  Phiếu đăng ký (theo MẪU)<br />
+                    -  Phiếu đăng ký (theo <a href="https://dhhp.edu.vn/admissions/phieu/phieu-dk-nang-luc.pdf" className="font-semibold underline">MẪU <FontAwesomeIcon icon={faDownload} /></a>)<br />
                   </div>
                   <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div className="font-medium text-base mb-1">5: Xét tuyển thẳng theo quy định của Bộ GD&ĐT</div>
+                    <div className="font-medium text-base mb-1">Phương thức 5: Xét tuyển thẳng theo quy định của Bộ GD&ĐT</div>
                     -  Giấy chứng nhận đạt giải (bản sao công chứng)<br />
-                    -  Phiếu đăng ký (theo MẪU)<br />
+                    -  Phiếu đăng ký (theo <a href="https://dhhp.edu.vn/admissions/phieu/phieu-dk-tuyen-thang.pdf" className="font-semibold underline">MẪU <FontAwesomeIcon icon={faDownload} /></a>)<br />
                   </div>
                   <div className="p-4 md:p-6 rounded-xl bg-red-600 text-white transition duration-300" data-aos="fade-up" data-aos-duration="1000">
-                    <div className="text-base font-medium mb-1">6. Hồ sơ đăng ký dự thi môn Năng khiếu</div>
-                    -  Phiếu đăng ký dự thi theo mẫu (theo MẪU);<br />
+                    <div className="text-base font-medium mb-1">Hồ sơ đăng ký dự thi môn Năng khiếu</div>
+                    -  Phiếu đăng ký dự thi theo mẫu (theo <a href="https://dhhp.edu.vn/admissions/phieu/phieu-dk-nang-khieu.pdf" className="font-semibold underline">MẪU <FontAwesomeIcon icon={faDownload} /></a>);<br />
                     -  Căn cước công dân (bản sao công chứng)<br />
                     -  03 ảnh 4x6;<br />
                     -  Lệ phí thi: 300.000 đồng.<br />
@@ -242,7 +244,7 @@ export default function Home() {
                     <FontAwesomeIcon icon={faHome} />Số 171 Phan Đăng Lưu, Kiến An, Hải Phòng
                   </div>
                   <div className="text-white flex items-center gap-2">
-                    <FontAwesomeIcon icon={faPhone} />0398.171.171 - 0773.171.171
+                    <FontAwesomeIcon icon={faPhone} /><a href="tel:0398171171">0398.171.171</a> - <a href="tel:0773171171">0773.171.171</a>
                   </div>
                 </div>
               </div>
@@ -254,8 +256,8 @@ export default function Home() {
         }} className="py-4 md:py-20 bg-cover" id="method">
           <div className="container mx-auto py-4 md:py-10 px-2 md:px-0">
             <Heading1 center title="Chế độ chính sách với sinh viên" white />
-            <div className="bg-white rounded-xl mx-auto border-2 border-white bg-cover max-w-[1000px]">
-              <div className="bg-red-500 max-w-[1000px] mx-auto rounded-xl" data-aos="fade-up" data-aos-duration="1000" >
+            <div className="bg-white rounded-xl mx-auto border-2 border-white bg-cover max-w-[1000px]" data-aos="fade-up" data-aos-duration="1000">
+              <div className="bg-red-500 max-w-[1000px] mx-auto rounded-xl">
                 <div className="p-4 md:p-10">
                   <div className="text-white text-sm md:text-base">
                     <div className="mb-2">
