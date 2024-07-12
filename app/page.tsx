@@ -180,7 +180,7 @@ export default function Home() {
           <div className="container mx-auto py-4 md:py-10 px-2 md:px-0  drop-shadow">
             <div className="md:flex gap-2 md:gap-4 2xl:gap-10 items-center">
               <div className="md:w-2/3 mb-4">
-                <div className="text-xl text-white md:text-3xl font-bold mb-4 md:mb-8" data-aos="fade-up" data-aos-duration="1000">HỒ SƠ XÉT TUYỂN HỌC BẠ</div>
+                <div className="text-xl text-white md:text-3xl font-bold mb-4 md:mb-8" data-aos="fade-up" data-aos-duration="1000">HỒ SƠ XÉT TUYỂN</div>
                 <div className="grid md:grid-cols-2 gap-2 md:gap-4 mb-4 text-sm">
                   <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000">
                     <div className="font-medium text-base mb-1">Phương thức 1. Xét kết quả thi tốt nghiệp THPT năm 2024</div>
