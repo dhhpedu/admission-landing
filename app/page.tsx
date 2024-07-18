@@ -107,7 +107,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="md:px-0 px-2 drop-shadow">
-                  <div className="bg-white rounded md:bg-transparent p-4 md:p-0">
+                  <div className="bg-white rounded md:bg-transparent p-4 md:p-0 text-slate-900">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
                       <div className="mb-1"><b>1. Phương thức 1:</b> Xét kết quả thi tốt nghiệp THPT năm 2024.</div>
                       <ul className="list-disc md:pl-10 pl-4">
@@ -182,7 +182,7 @@ export default function Home() {
               <div className="md:w-2/3 mb-4">
                 <div className="text-xl text-white md:text-3xl font-bold mb-4 md:mb-8" data-aos="fade-up" data-aos-duration="1000">HỒ SƠ XÉT TUYỂN</div>
                 <div className="grid md:grid-cols-2 gap-2 md:gap-4 mb-4 text-sm">
-                  <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000">
+                  <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300 text-slate-900" data-aos="fade-up" data-aos-duration="1000">
                     <div className="font-medium text-base mb-1">Phương thức 1. Xét kết quả thi tốt nghiệp THPT năm 2024</div>
                     Thí sinh phải đăng ký nguyện vọng trên cổng Tuyển sinh quốc gia: <a href="https://thisinh.thitotnghiepthpt.edu.vn/" className="text-blue-500">https://thisinh.thitotnghiepthpt.edu.vn/</a> từ ngày <b>18/7/2024</b> đến <b>30/7/2024</b>
                   </div>
@@ -201,12 +201,12 @@ export default function Home() {
                     -  Chứng chỉ quốc tế (bản sao công chứng)<br />
                     -  Phiếu đăng ký (theo <a href="https://dhhp.edu.vn/admissions/phieu/phieu-dk-chung-chi-quoc-te.pdf" className="font-semibold underline">MẪU <FontAwesomeIcon icon={faDownload} /></a>)<br />
                   </div>
-                  <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                  <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300 text-slate-900" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div className="mb-1"><span className="font-medium text-base">Phương thức 4. Xét kết quả thi Đánh giá năng lực hoặc đánh giá tư duy năm 2024 do Đại học Quốc gia Hà Nội, Đại học Quốc gia Thành phố Hồ Chí Minh, Đại học Bách Khoa Hà Nội tổ chức</span></div>
                     -  Giấy chứng nhận kết quả thi (bản sao công chứng)<br />
                     -  Phiếu đăng ký (theo <a href="https://dhhp.edu.vn/admissions/phieu/phieu-dk-nang-luc.pdf" className="font-semibold underline">MẪU <FontAwesomeIcon icon={faDownload} /></a>)<br />
                   </div>
-                  <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                  <div className="p-4 md:p-6 rounded-xl bg-white min-h-40 transition duration-300 text-slate-900" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div className="font-medium text-base mb-1">Phương thức 5: Xét tuyển thẳng theo quy định của Bộ GD&ĐT</div>
                     -  Giấy chứng nhận đạt giải (bản sao công chứng)<br />
                     -  Phiếu đăng ký (theo <a href="https://dhhp.edu.vn/admissions/phieu/phieu-dk-tuyen-thang.pdf" className="font-semibold underline">MẪU <FontAwesomeIcon icon={faDownload} /></a>)<br />
@@ -261,22 +261,22 @@ export default function Home() {
                     <div className="mb-2">Hàng năm, Trường ĐHHP dành hàng chục tỉ đồng cho những loại hình học bổng sau:</div>
                   </div>
                   <div className="text-white md:text-xl font-bold mb-2 uppercase">1. Học bổng Khuyến khích học tập</div>
-                  <div className="p-4 rounded bg-white mb-4 text-sm md:text-base">
+                  <div className="p-4 rounded bg-white mb-4 text-sm md:text-base text-slate-900">
                     Tỉ lệ sinh viên đạt học bổng chiếm tỷ lệ từ 5% đến 8% trên tổng số hơn 10.000 sinh viên chính quy toàn trường; trị giá học bổng từ 100% đến 120% mức học phí từng ngành đạo tạo, chương trình đào tạo.
                   </div>
 
                   <div className="text-white md:text-xl font-bold mb-2 uppercase">2. Học bổng tài trợ từ các tổ chức, doanh nghiệp theo chương trình &quot;Ươm mầm tài năng Đại học Hải Phòng&quot;.</div>
-                  <div className="p-4 bg-white mb-4 text-sm md:text-base">
+                  <div className="p-4 bg-white mb-4 text-sm md:text-base text-slate-900">
                     Nhà trường liên kết chặt chẽ với các doanh nghiệp, tổ chức trong và ngoài nước hàng năm dành tặng cho sinh viên nhà trường hàng trăm triệu đồng mỗi năm như học bổng của Ngân hàng TMCP Vietinbank, Vietcombank; Tổ chức Tầm nhìn thế giới World Vision; Tập đoàn LG; Quỹ Giáo dục Quốc tế Hàn Quốc Woonjung; Công ty TNHH Pegatron,… dành tặng cho sinh viên trúng tuyển đạt thủ khoa đầu ngành, sinh viên đạt thành tích cao tại các cuộc thi cấp quốc gia và quốc tế trúng tuyển vào trường, những sinh viên đạt thành tích cao trong học tập và rèn luyện, sinh viên có hoàn cảnh khó khăn vươn lên trong học tập.
                   </div>
                   <div className="text-white md:text-xl font-bold mb-2 uppercase">3. Học bổng tài năng:</div>
-                  <div className="bg-white p-4 mb-4 text-sm md:text-base rounded">
+                  <div className="bg-white p-4 mb-4 text-sm md:text-base rounded text-slate-900">
                     Đặc biệt, trong năm học 2024 - 2025, Nhà trường liên kết với các doanh nghiệp trên địa bàn thành phố dành các suất học bổng có giá trị cao cho các sinh viên có thành tích học tập giỏi, xuất sắc vào học chương trình chất lượng cao tại trường. Bên cạnh đó, sinh viên chương trình CLC được tạo điều kiện về thực tập thực hành tại các Doanh nghiệp, tổ chức tài trợ và có chính sách ưu tiên trong tuyển dụng.
 
                   </div>
                   <div className="text-white md:text-xl font-bold mb-2 uppercase">4. Các chính sách hỗ trợ khác</div>
 
-                  <div className="p-4 bg-white rounded text-sm md:text-base">
+                  <div className="p-4 bg-white rounded text-sm md:text-base text-slate-900">
                     <div className="font-semibold mb-2 text-lg">Nhà trường đảm bảo thực hiện đầy đủ các chính sách cho sinh viên theo các quy định của nhà nước, cụ thể:</div>
                     <ul className="list-disc md:pl-10 pl-4">
                       <li>

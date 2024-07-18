@@ -5,7 +5,13 @@ export const Menu = [
     },
     {
         label: 'Các ngành đào tạo',
-        url: '#branch'
+        url: '#branch',
+        children: [
+            {
+                label: 'Ngành luật',
+                url: '/nganh/luat'
+            }
+        ]
     },
     {
         label: 'Phương thức xét tuyển',

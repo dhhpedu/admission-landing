@@ -21,8 +21,15 @@ const Header: React.FC = () => {
                         <div className="flex-1 md:flex hidden items-center gap-4 justify-center">
                             {
                                 Menu.map((value, index) => (
-                                    <div key={index} className="py-1 text-sm font-medium 2xl:text-lg">
+                                    <div key={index} className="py-1 text-sm font-medium 2xl:text-lg relative">
                                         <a href={value.url} className="hover:border-b-2 border-blue-500 py-1">{value.label}</a>
+                                        {
+                                            value.children && (
+                                                <div className="absolute bg-white top-10 w-52 shadow hover:block hidden">
+                                                    <div className="px-4 py-2">Ngành luật</div>
+                                                </div>
+                                            )
+                                        }
                                     </div>
                                 ))
                             }
